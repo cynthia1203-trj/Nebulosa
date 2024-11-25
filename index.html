@@ -1,0 +1,190 @@
+<!DOCTYPE html>  
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Nebulosa</title> 
+  <link rel="stylesheet" href="registro.css"> 
+</head> 
+<body> 
+  <header class="header"> 
+    <!-- Logo con Imagen --> 
+    <div class="logo"> 
+      <img src="Nebulosa.png" alt="Logo del Blog"> 
+    </div>
+    <!-- Menú de Navegación -->
+    <nav class="nav"> 
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Sobre nosotros</a>
+      <a href="#tendencia">Tendencia</a>
+      <a href="#recientes">Recientes</a>
+      <a href="#contacto">Contacto</a>
+    </nav> 
+  </header> 
+
+  <!-- Sección de Inicio -->
+  <section id="inicio" class="hero">
+    <video class="background-video" autoplay muted loop>
+      <source src="redessociales.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de videos.
+    </video>
+    <div class="hero-content">
+      <h1>¡Bienvenidos a Nebulosa!</h1>
+      <p>Navegando el cosmos del marketing</p>
+    </div>
+  </section>
+
+  <!-- Sección sobre nosotros -->
+  <section id="nosotros" class="thank-you-section">
+    <div class="content">
+      <div class="eye-icon">
+        <div class="eye">
+          <div class="pupil"></div>
+        </div>
+      </div>
+      <h1>Somos Nebulosa Digital</h1>
+      <p>
+        Un espacio dedicado a explorar nuevas ideas, tendencias emergentes y todo lo fascinante que ofrece el universo del marketing digital.
+        <br>
+        Actuamos como una guía en este dinámico cosmos creativo, ayudándote a navegar lo desconocido y a aprovechar las oportunidades en un mundo en constante evolución.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección de Tendencias -->
+  <div id="tendencia" class="container">
+    <div class="left-section">
+        <p>Tendencias en Redes Sociales 2024</p>
+        <h1>Claves para el Diseño Visual en Plataformas Digitales</h1>
+        <p>
+            En el mundo digital, las redes sociales se han convertido en el centro de interacción,
+            entretenimiento y marketing para millones de usuarios.
+        </p>
+        <div class="buttons">
+            <a href="tendencias.html">
+                <button class="btn">Ver más</button>
+            </a>
+        </div>
+    </div>
+    <div class="right-section">
+        <img src="collect.jpg" alt="Green materials" />
+    </div>
+  </div>
+
+  <!-- Sección de Publicaciones Recientes -->
+  <section id="recientes" class="posts">
+    <h2>Mis Recientes Historias</h2>
+    <div class="post-grid">
+      <!-- Primera Publicación -->
+<article class="post-card">
+  <img src="pag1.jpg" alt="Post 1">
+  <h3>Marketing Viral</h3>
+  <p>Cómo replicar el “efecto viral.”</p>
+  <a href="marketing-viral.html" class="read-more">Leer más</a>
+</article>
+
+<!-- Segunda Publicación -->
+<article class="post-card">
+  <img src="pag2.jpg" alt="Post 2">
+  <h3>El Poder del contenido visual</h3>
+  <p>Estrategias para optimizar el contenido.</p>
+  <a href="contenido-visual.html" class="read-more">Leer más</a>
+</article>
+
+<!-- Tercera Publicación -->
+<article class="post-card">
+  <img src="pag3.jpg" alt="Post 3">
+  <h3>Publicidad programática</h3>
+  <p>Transformando el Marketing Digital con IA.</p>
+  <a href="publicidad-programatica.html" class="read-more">Leer más</a>
+</article>
+
+<!-- Cuarta Publicación -->
+<article class="post-card">
+  <img src="pag4.jpg" alt="Post 4">
+  <h3>Marketing de influencers ético</h3>
+  <p>Campañas con influencers de forma auténtica.</p>
+  <a href="influencers-etico.html" class="read-more">Leer más</a>
+</article>
+
+<!-- Quinta Publicación -->
+<article class="post-card">
+  <img src="microinf.jpg" alt="Post 5">
+  <h3>Micro-influencers y el marketing de nicho</h3>
+  <p>El Poder de las Audiencias Específicas.</p>
+  <a href="micro-influencers.html" class="read-more">Leer más</a>
+</article>
+
+<!-- Sexta Publicación -->
+<article class="post-card">
+  <img src="pag6.jpg" alt="Post 6">
+  <h3>Marketing de experiencia</h3>
+  <p>Experiencias memorables para los clientes.</p>
+  <a href="marketing-experiencia.html" class="read-more">Leer más</a>
+</article>
+
+  </section>
+
+  <section id="contacto" class="footer">
+    <p>&copy; 2024 Nebulosa. Todos los derechos reservados.</p>
+    <div class="social-links">
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+    </div>
+  </section>
+</body>
+</html>
+<style>
+  /* Estilos para el menú fijo en la parte superior */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2e509f;
+    color: white;
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    padding: 10px 0;
+  }
+
+  .logo img {
+    width: 200px;
+    margin-left: 60px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+
+  .nav a:hover {
+    background-color: #2e509f;
+  }
+
+  /* Espacio adicional para el contenido, para no cubrir el contenido con el menú fijo */
+  .content {
+    margin-top: 80px; /* Ajusta este valor dependiendo de la altura del menú */
+  }
+
+  /* Estilos para las secciones */
+  section {
+    padding: 60px 20px;
+    margin-top: 60px; /* Deja espacio para el menú fijo */
+  }
+</style>

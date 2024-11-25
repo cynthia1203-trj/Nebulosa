@@ -1,0 +1,361 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* Espacio entre el logo y el menú */
+  align-items: center;
+  background-color: #2e509f; /* Azul */
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.nav {
+  display: flex; /* Asegura que los enlaces se alineen horizontalmente */
+}
+
+.nav a {
+  margin: 0 1rem; /* Espaciado entre enlaces */
+  text-decoration: none;
+  color: #ffffff; /* Blanco */
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2e509f;
+  background-color: #ffffff;
+}
+
+
+/* Hero Section */
+/* Contenedor de la Sección */
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 4rem 2rem;
+  height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+  overflow: hidden;
+}
+
+/* Video de Fondo */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  object-fit: cover; 
+  z-index: -1;
+}
+/* Ajuste de la sección del video */
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 2rem 1rem; /* Reduce el relleno para evitar espacio adicional */
+  height: calc(100vh - 80px); /* Calcula la altura dinámica, menos el header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Ajusta a la altura total del contenedor */
+  object-fit: cover;
+  z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+
+/* Contenido en la Parte Superior del Video */
+.hero-content {
+  position: center;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Sección de Agradecimiento */
+.thank-you-section {
+  background-color: #ffffff;
+  color: #303132;
+  text-align: center;
+  padding: 4rem 2rem; /* Espaciado */
+  font-family: Arial, sans-serif; /* Fuente base */
+}
+
+.thank-you-section .eye-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.thank-you-section .eye {
+  background-color: #283483; /* Fondo del ojo */
+  width: 80px; /* Ancho del ojo */
+  height: 50px; /* Altura del ojo */
+  border-radius: 50%; /* Forma ovalada */
+  position: relative;
+}
+
+.thank-you-section .pupil {
+  background-color: #ffffff; /* Color de la pupila */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Redondear completamente */
+  position: absolute;
+  top: 50%; /* Centrar verticalmente */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translate(-50%, -50%); /* Ajuste exacto al centro */
+}
+
+.thank-you-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.thank-you-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px; /* Limita el ancho del texto */
+  margin: 0 auto; /* Centra el párrafo */
+}
+
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #303132;
+  background-color: #ffffff;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+/* Sección izquierda (texto) */
+.left-section {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.left-section h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.left-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #777;
+}
+
+.left-section .buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.left-section .btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: 2px solid #2e509f;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.left-section .btn:hover {
+  background-color: #2e509f;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+
+a .btn {
+  color: #2e509f;
+}
+
+
+/* Sección derecha (imagen/video) */
+.right-section {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.right-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Elemento flotante en la parte derecha */
+.right-section .floating-card {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.right-section .floating-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.right-section .floating-card p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.right-section .floating-card span {
+  display: block;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+
+/* Publicaciones */
+.posts {
+  padding: 2rem;
+}
+
+.posts h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.post-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.post-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.post-card h3 {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.post-card p {
+  font-size: 1rem;
+  margin: 0 1rem 1rem;
+}
+
+.post-card .read-more {
+  display: inline-block;
+  margin: 0 1rem 1rem;
+  text-decoration: none;
+  color: #2e509f;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Interactividad */
+.post-card:active {
+  transform: scale(0.95); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.post-card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.post-card:hover img {
+  transform: scale(1.1); 
+}
+
+.post-card:hover .read-more {
+  color: #757474;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer .social-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+.logo img {
+  width: 300px; 
+  height: auto; 
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
